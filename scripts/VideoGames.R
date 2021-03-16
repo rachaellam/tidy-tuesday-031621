@@ -35,7 +35,8 @@ monthly %>%
   theme_minimal() +
   scale_y_continuous(labels = comma) +
   labs(x = "Month",
-       y = "Total Average Users") +
+       y = "Total Average Users",
+       title = "Average Users Plotted Monthly Between 2012 and 2021 ") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ### Looking at number of players across all years ###
@@ -50,7 +51,8 @@ yearly %>%
   theme_minimal() +
   scale_y_continuous(labels = comma) +
   labs(x = "Year",
-       y = "Total Average Users") +
+       y = "Total Average Users",
+       title = "Average Users Plotted Between 2012 and 2021") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ### Looking at the COVID-19 year ###
@@ -70,7 +72,8 @@ twentytwenty %>%
   theme_minimal() +
   scale_y_continuous(labels = comma) +
   labs(x = "Year",
-       y = "Total Average Users") +
+       y = "Total Average Users",
+       title = "Average Users Plotted Monthly in 2020 (COVID-19 Year)") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 
